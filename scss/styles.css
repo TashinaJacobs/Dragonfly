@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #000;
+  color: white;
+  font-size: 30px; }
+
+header {
+  height: 90px; }
+  header .back,
+  header .logo,
+  header .bell {
+    float: left;
+    display: inline-block;
+    box-sizing: border-box; }
+  header .back,
+  header .bell {
+    width: 15%;
+    text-align: center; }
+  header .back {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    color: red; }
+  header .bell {
+    font-size: 1em;
+    padding-top: 5rem; }
+  header .logo {
+    width: 70%;
+    padding-top: 30px; }
+    header .logo a {
+      text-align: center;
+      width: 100%; }
+      header .logo a img {
+        height: 90px; }
+
+.container {
+  background-color: none;
+  width: 100%;
+  margin: 0 auto; }
+  .container .box {
+    width: 100%;
+    padding-top: none; }
+    .container .box div {
+      width: 50%;
+      background: #0f0d0d;
+      opacity: 0.49;
+      color: white;
+      text-align: center;
+      vertical-align: middle; }
+      .container .box div a {
+        width: 30%;
+        color: #ffffff;
+        padding: 70%; }
+    .container .box img {
+      width: 99%;
+      height: 320px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=styles.css.map */
