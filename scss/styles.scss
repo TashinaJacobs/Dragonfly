@@ -130,93 +130,189 @@ table {
 
 // CSS reset ^^^^^
 
-$black: #000;
-$grey: #333;
-$red: red;
-$white: white;
+// Variables
+$black: #000000;
+$grey: #333333;
+$red: #aa0b0f;
+$white: #ffffff;
+$light-grey: #666666;
 
+$tablet: 900px;
+
+//Mixins
+
+
+
+//
 body {
   background: $black;
   color: $white;
-  font-size: 30px;
+  // font-size: 20px;
 }
+//
+// header {
+//   height: 90px;
+//
+//   .back,
+//   .logo,
+//   .bell {
+//     float: left;
+//     display: inline-block;
+//     box-sizing: border-box;
+//   }
+//
+//   .back,
+//   .bell {
+//     width: 85%;
+//     text-align: center;
+//   }
+//
+//   .back {
+//     font-size: 3rem;
+//     padding-top: 1.5rem;
+//     color: $red;
+//   }
+//   .bell {
+//     font-size: 1em;
+//     padding-top: 5rem;
+//     color: $red;
+//   }
+//
+//   .logo {
+//     width: 40%;
+//     height: 40px;
+//     padding-top: 30px;
+//
+//     a {
+//       text-align: center;
+//       width: 100%;
+//
+//       img {
+//         height: 90px;
+//       }
+//     }
+//   }
+// }
+//
+// .container {
+//   background-color: none;
+//   width: 100%;
+//   margin: 0 auto;
+//
+//   .box {
+//     width: 100%;
+//     padding-top: none;
+//
+//     div {
+//       width: 50%;
+//       background: #0f0d0d;
+//       opacity: 0.49;
+//       color: white;
+//       text-align: center;
+//       vertical-align: middle;
+//
+//       a {
+//         width: 30%;
+//         color: #ffffff;
+//         padding: 70%;
+//         // position: center;
+//       }
+//     }
+//
+//     img {
+//       width: 99%;
+//       height: 320px;
+//     }
+//   }
+// }
+//
+// .clearfix:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
 
-header {
-  height: 90px;
+// Page structure
 
-  .back,
-  .logo,
-  .bell {
-    float: left;
-    display: inline-block;
-    box-sizing: border-box;
-  }
-
-  .back,
-  .bell {
-    width: 15%;
-    text-align: center;
-  }
-
-  .back {
-    font-size: 3rem;
-    padding-top: 1.5rem;
-    color: $red;
-  }
-  .bell {
-    font-size: 1em;
-    padding-top: 5rem;
-  }
-
+.header {
+  width: 100%;
+  height: 12%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   .logo {
     width: 70%;
-    padding-top: 30px;
+  }
 
-    a {
-      text-align: center;
-      width: 100%;
-
-      img {
-        height: 90px;
-      }
-    }
+  .icon {
+    font-size: 2em;
+    color: $red;
   }
 }
 
 .container {
-  background-color: none;
   width: 100%;
-  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+}
 
-  .box {
+.loginInfo {
+  margin-top: 30%;
+  width: 100%;
+  height: 30%;
+  background-color: $light-grey;
+  .loginDetails {
+    margin: 5%;
+    padding: 0 5% 5% 5%;
     width: 100%;
-    padding-top: none;
-
-    div {
-      width: 50%;
-      background: #0f0d0d;
-      opacity: 0.49;
-      color: white;
-      text-align: center;
-      vertical-align: middle;
-
-      a {
-        width: 30%;
-        color: #ffffff;
-        padding: 70%;
-        // position: center;
-      }
-    }
-
-    img {
-      width: 99%;
-      height: 320px;
-    }
+    height: 50%;
   }
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.inputTitle {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.inputName {
+  margin: 10%;
+  padding: .25em;
+  width: 50%;
+}
+
+
+
+
+
+// .name{
+// padding: ;
+//   font-family: Arial, sans-serif;
+// }
+
+
+
+
+
+
+// Component styling
+
+// .logo {
+//   width: 70%;
+// }
+//
+// .icon {
+//   font-size: 2em;
+//   color: $red;
+// }
+
+
+
+
+//Media queries
+
+@media (min-width: $tablet) {
+  // media querys go here
 }

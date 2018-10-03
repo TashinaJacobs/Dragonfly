@@ -127,63 +127,47 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #000;
-  color: white;
-  font-size: 30px; }
+  background: #000000;
+  color: #ffffff; }
 
-header {
-  height: 90px; }
-  header .back,
-  header .logo,
-  header .bell {
-    float: left;
-    display: inline-block;
-    box-sizing: border-box; }
-  header .back,
-  header .bell {
-    width: 15%;
-    text-align: center; }
-  header .back {
-    font-size: 3rem;
-    padding-top: 1.5rem;
-    color: red; }
-  header .bell {
-    font-size: 1em;
-    padding-top: 5rem; }
-  header .logo {
-    width: 70%;
-    padding-top: 30px; }
-    header .logo a {
-      text-align: center;
-      width: 100%; }
-      header .logo a img {
-        height: 90px; }
+.header {
+  width: 100%;
+  height: 12%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .header .logo {
+    width: 70%; }
+  .header .icon {
+    font-size: 2em;
+    color: #aa0b0f; }
 
 .container {
-  background-color: none;
   width: 100%;
-  margin: 0 auto; }
-  .container .box {
-    width: 100%;
-    padding-top: none; }
-    .container .box div {
-      width: 50%;
-      background: #0f0d0d;
-      opacity: 0.49;
-      color: white;
-      text-align: center;
-      vertical-align: middle; }
-      .container .box div a {
-        width: 30%;
-        color: #ffffff;
-        padding: 70%; }
-    .container .box img {
-      width: 99%;
-      height: 320px; }
+  height: 100vh;
+  display: flex; }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
+.loginInfo {
+  margin-top: 30%;
+  width: 100%;
+  height: 30%;
+  background-color: #666666; }
+  .loginInfo .loginDetails {
+    margin: 5%;
+    padding: 0 5% 5% 5%;
+    width: 100%;
+    height: 50%; }
+
+.inputTitle {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; }
+
+.inputName {
+  margin: 10%;
+  padding: .25em;
+  width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
