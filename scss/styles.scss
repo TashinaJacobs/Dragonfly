@@ -1,132 +1,133 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+// /* http://meyerweb.com/eric/tools/css/reset/
+//    v2.0 | 20110126
+//    License: none (public domain)
+// */
+//
+// html,
+// body,
+// div,
+// span,
+// applet,
+// object,
+// iframe,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// blockquote,
+// pre,
+// a,
+// abbr,
+// acronym,
+// address,
+// big,
+// cite,
+// code,
+// del,
+// dfn,
+// em,
+// img,
+// ins,
+// kbd,
+// q,
+// s,
+// samp,
+// small,
+// strike,
+// strong,
+// sub,
+// sup,
+// tt,
+// var,
+// b,
+// u,
+// i,
+// center,
+// dl,
+// dt,
+// dd,
+// ol,
+// ul,
+// li,
+// fieldset,
+// form,
+// label,
+// legend,
+// table,
+// caption,
+// tbody,
+// tfoot,
+// thead,
+// tr,
+// th,
+// td,
+// article,
+// aside,
+// canvas,
+// details,
+// embed,
+// figure,
+// figcaption,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// output,
+// ruby,
+// section,
+// summary,
+// time,
+// mark,
+// audio,
+// video {
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   font-size: 100%;
+//   font: inherit;
+//   vertical-align: baseline;
+//   overflow: hidden;
+// }
+// /* HTML5 display-role reset for older browsers */
+// article,
+// aside,
+// details,
+// figcaption,
+// figure,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// section {
+//   display: block;
+// }
+// body {
+//   line-height: 1;
+// }
+// ol,
+// ul {
+//   list-style: none;
+// }
+// blockquote,
+// q {
+//   quotes: none;
+// }
+// blockquote:before,
+// blockquote:after,
+// q:before,
+// q:after {
+//   content: "";
+//   content: none;
+// }
+// table {
+//   border-collapse: collapse;
+//   border-spacing: 0;
+// }
 
 // CSS reset ^^^^^
 
@@ -137,106 +138,32 @@ $red: #aa0b0f;
 $white: #ffffff;
 $light-grey: #666666;
 
-$tablet: 900px;
+$tablet: 600px;
 
 //Mixins
 
 
 
 //
-body {
+body, html {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   background: $black;
   color: $white;
-  // font-size: 20px;
+  font-size: 1em;
+  @media screen and (min-width: $tablet) {
+    font-size: 150%;
+  }
 }
-//
-// header {
-//   height: 90px;
-//
-//   .back,
-//   .logo,
-//   .bell {
-//     float: left;
-//     display: inline-block;
-//     box-sizing: border-box;
-//   }
-//
-//   .back,
-//   .bell {
-//     width: 85%;
-//     text-align: center;
-//   }
-//
-//   .back {
-//     font-size: 3rem;
-//     padding-top: 1.5rem;
-//     color: $red;
-//   }
-//   .bell {
-//     font-size: 1em;
-//     padding-top: 5rem;
-//     color: $red;
-//   }
-//
-//   .logo {
-//     width: 40%;
-//     height: 40px;
-//     padding-top: 30px;
-//
-//     a {
-//       text-align: center;
-//       width: 100%;
-//
-//       img {
-//         height: 90px;
-//       }
-//     }
-//   }
-// }
-//
-// .container {
-//   background-color: none;
-//   width: 100%;
-//   margin: 0 auto;
-//
-//   .box {
-//     width: 100%;
-//     padding-top: none;
-//
-//     div {
-//       width: 50%;
-//       background: #0f0d0d;
-//       opacity: 0.49;
-//       color: white;
-//       text-align: center;
-//       vertical-align: middle;
-//
-//       a {
-//         width: 30%;
-//         color: #ffffff;
-//         padding: 70%;
-//         // position: center;
-//       }
-//     }
-//
-//     img {
-//       width: 99%;
-//       height: 320px;
-//     }
-//   }
-// }
-//
-// .clearfix:after {
-//   content: "";
-//   display: table;
-//   clear: both;
-// }
 
 // Page structure
 
 .header {
   width: 100%;
   height: 12%;
+  margin: 0 auto;
   padding-top: 3%;
   padding-bottom: 3%;
   display: flex;
@@ -245,10 +172,10 @@ body {
   .logo {
     width: 70%;
   }
-
   .icon {
     font-size: 2em;
     color: $red;
+    // padding-left: 5%;
   }
 }
 
@@ -259,29 +186,71 @@ body {
 }
 
 .loginInfo {
-  margin-top: 30%;
+  margin: 5%;
+  padding: 10%;
   width: 100%;
   height: 30%;
   background-color: $light-grey;
+
   .loginDetails {
     margin: 5%;
     padding: 0 5% 5% 5%;
-    width: 100%;
-    height: 50%;
+    height: 30%;
   }
 }
 
-.inputTitle {
-  margin: 0 auto;
-  width: 100%;
+.inputTitleOne {
+  // margin: 0 35%;
+  // width: 100%;
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.inputTitleTwo {
+  // margin: 0 28%;
+  // width: 100%;
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: sans-serif;
   text-align: center;
 }
 
 .inputName {
-  margin: 10%;
+  margin: 5% 7%;
+  width: 65%;
   padding: .25em;
-  width: 50%;
+  font-size: .75em;
+  font-weight: 600;
+  color: $light-grey;
 }
+
+.inputNumber {
+  margin: 5% 20%;
+  width: 40%;
+  padding: .25em;
+  font-size: .75em;
+  font-weight: 600;
+  color: $light-grey;
+}
+
+.enter {
+  // padding: 2rem 4rem;
+  background-color: $black;
+  color: $white;
+  font-size: 1.3em;
+  font-weight: 300;
+  text-decoration: underline;
+  border: none;
+}
+
+.fan {
+  max-width: 100%;
+    height: auto;
+}
+
+
 
 
 
@@ -313,6 +282,8 @@ body {
 
 //Media queries
 
-@media (min-width: $tablet) {
-  // media querys go here
-}
+// @media only screen and (min-width: $tablet) {
+//   body {
+//     font-size: 200%;
+//   }
+// }
