@@ -5,6 +5,7 @@ body, html {
   box-sizing: border-box;
   background: #000000;
   color: #ffffff;
+  font-family: 'Arial', sans-serif;
   font-size: 1em; }
   @media screen and (min-width: 600px) {
     body, html {
@@ -29,24 +30,26 @@ body, html {
 .container {
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
-  display: flex; }
+  height: 100%;
+  display: flex;
+  background-image: url("../img/fan.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .loginInfo {
   margin: 5%;
   padding: 10%;
   width: 100%;
-  height: 30%;
-  background-color: #666666; }
+  height: 60%;
+  text-align: center; }
   .loginInfo .loginDetails {
     margin: 5%;
-    padding: 0 5% 5% 5%;
-    height: 30%; }
+    padding: 5%; }
 
 .inputTitle {
   font-size: 1em;
   font-weight: lighter;
-  font-family: sans-serif;
   text-align: center; }
 
 .inputField {
@@ -56,7 +59,7 @@ body, html {
   color: #666666; }
 
 .enter {
-  background-color: #000000;
+  padding-top: 20%;
   color: #ffffff;
   font-size: 1.3em;
   font-weight: 300;
