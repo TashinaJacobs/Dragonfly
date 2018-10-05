@@ -1,133 +1,133 @@
-// /* http://meyerweb.com/eric/tools/css/reset/
-//    v2.0 | 20110126
-//    License: none (public domain)
-// */
-//
-// html,
-// body,
-// div,
-// span,
-// applet,
-// object,
-// iframe,
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// p,
-// blockquote,
-// pre,
-// a,
-// abbr,
-// acronym,
-// address,
-// big,
-// cite,
-// code,
-// del,
-// dfn,
-// em,
-// img,
-// ins,
-// kbd,
-// q,
-// s,
-// samp,
-// small,
-// strike,
-// strong,
-// sub,
-// sup,
-// tt,
-// var,
-// b,
-// u,
-// i,
-// center,
-// dl,
-// dt,
-// dd,
-// ol,
-// ul,
-// li,
-// fieldset,
-// form,
-// label,
-// legend,
-// table,
-// caption,
-// tbody,
-// tfoot,
-// thead,
-// tr,
-// th,
-// td,
-// article,
-// aside,
-// canvas,
-// details,
-// embed,
-// figure,
-// figcaption,
-// footer,
-// header,
-// hgroup,
-// menu,
-// nav,
-// output,
-// ruby,
-// section,
-// summary,
-// time,
-// mark,
-// audio,
-// video {
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-//   font-size: 100%;
-//   font: inherit;
-//   vertical-align: baseline;
-//   overflow: hidden;
-// }
-// /* HTML5 display-role reset for older browsers */
-// article,
-// aside,
-// details,
-// figcaption,
-// figure,
-// footer,
-// header,
-// hgroup,
-// menu,
-// nav,
-// section {
-//   display: block;
-// }
-// body {
-//   line-height: 1;
-// }
-// ol,
-// ul {
-//   list-style: none;
-// }
-// blockquote,
-// q {
-//   quotes: none;
-// }
-// blockquote:before,
-// blockquote:after,
-// q:before,
-// q:after {
-//   content: "";
-//   content: none;
-// }
-// table {
-//   border-collapse: collapse;
-//   border-spacing: 0;
-// }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  overflow: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 // CSS reset ^^^^^
 
@@ -183,11 +183,15 @@ body, html {
   }
 }
 
-.containerOne {
+.container {
   margin: 0 auto;
   width: 100%;
   height: 88%;
   display: flex;
+}
+
+//Page one
+.containerOne {
   background-image: url("../img/fan.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -199,13 +203,11 @@ body, html {
   padding: 10%;
   width: 100%;
   height: 60%;
-  // background-color: $light-grey;
   text-align: center;
 
   .loginDetails {
     margin: 5%;
     padding: 5%;
-    // height: 30%;
   }
 }
 
@@ -232,71 +234,93 @@ body, html {
   margin-bottom: 12%;
 }
 
-// .inputTitleOne {
-//   // margin: 0 35%;
-//   // width: 100%;
-//   font-size: 1em;
-//   font-weight: lighter;
-//   text-align: center;
-// }
-//
-// .inputTitleTwo {
-//   // margin: 0 28%;
-//   // width: 100%;
-//   font-size: 1em;
-//   font-weight: lighter;
-//   text-align: center;
-// }
-
-
 .enter {
   margin-top: 50%;
-  // background-color: none;
   color: $white;
   font-size: 1.3em;
   font-weight: 300;
   text-decoration: underline;
   border: none;
+  @media screen and (min-width: $tablet) {
+    margin-top: 15%;
+  }
 }
 
-// .fan {
-//   max-width: 100%;
-//     height: auto;
-// }
+//Page two
 
+.boxOne{
+   background-image: url('../img/restaurant.jpg');
+   width: 100%;
+   height: 40%;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   // position:absolute;
+}
 
-
-
-
-
-
-// .name{
-// padding: ;
-//   font-family: Arial, sans-serif;
-// }
-
-
-
-
-
-
-// Component styling
-
-// .logo {
-//   width: 70%;
+// .boxTwo{
+//   background-image: url("../img/wine.jpg");
+//   width: 100%;
+//   height: 40%;
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+//   // position: relative;
 // }
 //
-// .icon {
-//   font-size: 2em;
-//   color: $red;
+// .boxThree{
+//   background-image: url("../img/coffee.jpg");
+//   width: 100%;
+//   height: 25%;
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+//   // background-position: center bottom;
+// }
+//
+// .boxFour{
+//   background-image: url("../img/desert.jpg");
+//   width: 100%;
+//   height: 25%;
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+//   // background-position: center bottom;
+// }
+
+.dinnerButton {
+  margin-top: 28%;
+  color: $white;
+  font-size: 1.3em;
+  // font-weight: 100;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    margin-top: 15%;
+  }
+}
+
+// .containerTwo {
+//   margin: 0 auto;
+//   width: 100%;
+//   height: 88%;
+//   display: flex;
 // }
 
 
+//Page three
+
+
+//Page four
+
+
+
+// Images - use as background in CSS instead of <img> where possible
+// Remember to set margins instead of doing everything with padding
+// Remember display shit - block, etc
+// Use ems for font, not rem
+// Use percentages for other stuff and remember they're a percentage of their direct parent - not the page itself
 
 
 //Media queries
 
-// @media only screen and (min-width: $tablet) {
+// @media screen and (min-width: $tablet) {
 //   body {
 //     font-size: 200%;
 //   }
