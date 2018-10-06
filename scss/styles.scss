@@ -90,7 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  overflow: hidden;
+  // overflow: hidden;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -251,10 +251,6 @@ body, html {
 //Page two
 
 .containerTwo {
-  margin: 0 auto;
-  width: 100%;
-  height: 88%;
-  display: flex;
   flex-direction: column;
   align-items: center;
 
@@ -315,11 +311,8 @@ body, html {
 //Page three
 
 .containerThree {
-    margin: 0 auto;
-    width: 100%;
-    height: 88%;
-    display: flex;
-    background-color: $darkslategrey;
+  background-color: $darkslategrey;
+  overflow: scroll;
 }
 
 .description {
@@ -352,19 +345,31 @@ h1 {
 }
 
 .addButton {
-  padding: 1em 2em 1em 2em;
-  // font-size:
+  padding: .5em 1.25em .5em 1.25em;
+  font-size: .9em;
   background-color: $red;
   color: $white;
   border: none;
 }
 
-h2 {
+.itemNumber {
+  padding: .5em 0 .5em 0;
+  font-size: .75em;
+  color: $light-grey;
+  width: 10%;
+  text-align: center;
+}
 
+h2 {
+  padding-bottom: .4em;
+  font-size: .85em;
+  font-weight: 500;
 }
 
 p {
-
+  font-size: .65em;
+  font-weight: 100;
+  line-height: 1.6em;
 }
 
 hr {
@@ -372,10 +377,19 @@ hr {
   // color: $red;
 }
 
-
+.menuItem {
+  padding: 10%;
+}
 
 //Page four
-
+.continueButton {
+  margin: 15% 35% 15% 35%;
+  padding: .5em 1.25em .5em 1.25em;
+  font-size: .9em;
+  background-color: $light-grey;
+  color: $white;
+  border: none;
+}
 
 
 // Images - use as background in CSS instead of <img> where possible

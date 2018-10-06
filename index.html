@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dragonfly</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
   <link rel="stylesheet" href="scss/styles.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   </head>
@@ -55,84 +55,82 @@
         <p class="choiceInstructions">choose any four dishes for $50 <br> perfect for a light meal for 2 to share</p>
       </div>
       <hr>
-
-      <ul>
-        <li class="menuItem">
-          <div>
+      <div class="menu">
+        <div class="menuItem">
+          <div class="itemText">
             <h2>DUCK AND SHIITAKE SPRING ROLLS</h2>
             <p>w - vermicelli, hoisin, wood ear mushrooms and cucumber nuoc cham</p>
           </div>
-          <div>
-            <input type="number" name="duck" value="">
+          <div class="itemInputs">
+            <input class="itemNumber" type="number" name="duck" value="">
             <button class="addButton" type="button">ADD</button>
           </div>
-        </li>
-        <li class="menuItem">
-          <div>
+        </div>
+        <div class="menuItem">
+          <div class="itemText">
             <h2> SALT AND PEPPER SQUID LEGS</h2>
             <p>w – spiced nori salt and house made roasted sesame mayo</p>
           </div>
-          <div>
-            <input type="number" name="squid" value="">
+          <div class="itemInputs">
+            <input class="itemNumber" type="number" name="squid" value="">
             <button class="addButton" type="button">ADD</button>
           </div>
-        </li>
-        <li class="menuItem">
-          <div>
+        </div>
+        <div class="menuItem">
+          <div class="itemText">
             <h2>GINGER CHICKEN DUMPLINGS</h2>
             <p>free range chicken w– fresh ginger and coriander, served in fragrant chilli oil, cassia black vinegar dressing</p>
           </div>
-          <div>
-            <input type="number" name="chicken dumpling" value="">
+          <div class="itemInputs">
+            <input class="itemNumber" type="number" name="chicken dumpling" value="">
             <button class="addButton" type="button">ADD</button>
           </div>
-        </li>
-        <li class="menuItem">
-          <div>
+        </div>
+        <div class="menuItem">
+          <div class="itemText">
             <h2>KOREAN STYLE FRIED CHICKEN</h2>
             <p>w – sweet roasted chilli, spring onion and sesame glaze</p>
           </div>
-          <div>
-            <input type="number" name="fried chicken" value="">
+          <div class="itemInputs">
+            <input class="itemNumber" type="number" name="fried chicken" value="">
             <button class="addButton" type="button">ADD</button>
           </div>
-        </li>
-        <li class="menuItem">
-          <div>
+        </div>
+        <div class="menuItem">
+          <div class="itemText">
             <h2>SAN CHOI BAO</h2>
             <p>shiitake mushroom, fresh lime, organic tofu, spring onion, peanut and ginger w – baby cos leaves</p>
           </div>
-          <div>
-            <input type="number" name="san choi bao" value="">
+          <div class="itemInputs">
+            <input class="itemNumber" type="number" name="san choi bao" value="">
             <button class="addButton" type="button">ADD</button>
           </div>
-        </li>
-        <li class="menuItem">
-          <div>
+        </div>
+        <div class="menuItem">
+          <div class="itemText">
             <h2>PORK AND CHIVE DUMPLINGS</h2>
             <p>w – ginger infused rice vinegar and soy sauce</p>
           </div>
-          <div>
-            <input type="number" name="pork dumpling" value="">
+          <div class="itemInputs">
+            <input class="itemNumber" type="number" name="pork dumpling" value="">
             <button class="addButton" type="button">ADD</button>
           </div>
-        </li>
-        <li class="menuItem">
-          <div>
+        </div>
+        <div class="menuItem">
+          <div class="itemText">
             <h2>STEAMED PRAWN SHUMAI</h2>
             <p>w – water chestnuts, garlic chives, pickled green peppercorn, wild Thai ginger, chilli and soy dipping sauce</p>
           </div>
-          <div>
-            <input type="number" name="prawn" value="">
+          <div class="itemInputs">
+            <input class="itemNumber" type="number" name="prawn" value="">
             <button class="addButton" type="button">ADD</button>
           </div>
-        </li>
-      </ul>
-
+        </div>
+    </div>
       <hr>
 
       <div>
-        <input type="submit" value="CONTINUE">
+        <button class="continueButton" type="button">CONTINUE</button>
       </div>
     </div>
   </div>
@@ -146,7 +144,7 @@
       <hr>
 
       <ul>
-        <li class="menuItem">
+        <div class="menuItem">
           <div>
             <h2>DUCK AND SHIITAKE SPRING ROLLS</h2>
             <p>w - vermicelli, hoisin, wood ear mushrooms and cucumber nuoc cham</p>
@@ -154,8 +152,8 @@
           <div>
             <p>X 1</p>
           </div>
-        </li>
-        <li class="menuItem">
+        </div>
+        <div class="menuItem">
           <div>
             <h2> SALT AND PEPPER SQUID LEGS</h2>
             <p>w – spiced nori salt and house made roasted sesame mayo</p>
@@ -163,8 +161,8 @@
           <div>
             <p>X 1</p>
           </div>
-        </li>
-        <li class="menuItem">
+        </div>
+        <div class="menuItem">
           <div>
             <h2>GINGER CHICKEN DUMPLINGS</h2>
             <p>free range chicken w– fresh ginger and coriander, served in fragrant chilli oil, cassia black vinegar dressing</p>
@@ -172,7 +170,7 @@
           <div>
             <P>X 2</P>
           </div>
-        </li>
+        </div>
       </ul>
 
       <hr>
