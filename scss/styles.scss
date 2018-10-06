@@ -248,53 +248,59 @@ body, html {
 
 //Page two
 
+.containerTwo {
+  margin: 0 auto;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.box {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .boxOne{
    background-image: url('../img/restaurant.jpg');
-   width: 100%;
-   height: 40%;
-   background-size: 100% 100%;
-   background-repeat: no-repeat;
-   background-position: center;
-   // position:absolute;
 }
 
-// .boxTwo{
-//   background-image: url("../img/wine.jpg");
-//   width: 100%;
-//   height: 40%;
-//   background-size: 100% 100%;
-//   background-repeat: no-repeat;
-//   // position: relative;
-// }
-//
-// .boxThree{
-//   background-image: url("../img/coffee.jpg");
-//   width: 100%;
-//   height: 25%;
-//   background-size: 100% 100%;
-//   background-repeat: no-repeat;
-//   // background-position: center bottom;
-// }
-//
-// .boxFour{
-//   background-image: url("../img/desert.jpg");
-//   width: 100%;
-//   height: 25%;
-//   background-size: 100% 100%;
-//   background-repeat: no-repeat;
-//   // background-position: center bottom;
-// }
+.boxTwo{
+  background-image: url("../img/wine.jpg");
+}
 
-.dinnerButton {
-  margin-top: 28%;
-  color: $white;
+.boxThree{
+  background-image: url("../img/coffee.jpg");
+}
+
+.boxFour{
+  background-image: url("../img/dessert.jpg");
+}
+
+.title {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 1.3em;
-  // font-weight: 100;
   text-align: center;
+  line-height: 3em;
+  border-radius: 2px;
   @media screen and (min-width: $tablet) {
-    margin-top: 15%;
+    line-height: 2em;
   }
 }
+
+
 
 // .containerTwo {
 //   margin: 0 auto;

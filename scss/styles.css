@@ -209,21 +209,48 @@ body, html {
     .enter {
       margin-top: 15%; } }
 
-.boxOne {
-  background-image: url("../img/restaurant.jpg");
+.containerTwo {
+  margin: 0 auto;
   width: 100%;
-  height: 40%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.box {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
-.dinnerButton {
-  margin-top: 28%;
-  color: #ffffff;
+.boxOne {
+  background-image: url("../img/restaurant.jpg"); }
+
+.boxTwo {
+  background-image: url("../img/wine.jpg"); }
+
+.boxThree {
+  background-image: url("../img/coffee.jpg"); }
+
+.boxFour {
+  background-image: url("../img/dessert.jpg"); }
+
+.title {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 1.3em;
-  text-align: center; }
+  text-align: center;
+  line-height: 3em;
+  border-radius: 2px; }
   @media screen and (min-width: 600px) {
-    .dinnerButton {
-      margin-top: 15%; } }
+    .title {
+      line-height: 2em; } }
 
 /*# sourceMappingURL=styles.css.map */
