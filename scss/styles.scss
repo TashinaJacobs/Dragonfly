@@ -137,6 +137,8 @@ $grey: #333333;
 $red: #aa0b0f;
 $white: #ffffff;
 $light-grey: #666666;
+$darkslategrey: #363535;
+$rosybrown: #c98d8e;
 
 $tablet: 600px;
 
@@ -152,7 +154,7 @@ body, html {
   box-sizing: border-box;
   background: $black;
   color: $white;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   @media screen and (min-width: $tablet) {
     font-size: 150%;
@@ -311,6 +313,65 @@ body, html {
 
 
 //Page three
+
+.containerThree {
+    margin: 0 auto;
+    width: 100%;
+    height: 88%;
+    display: flex;
+    background-color: $darkslategrey;
+}
+
+.description {
+  text-align: center;
+  padding: 0 2em 0 2em;
+
+}
+
+h1 {
+    padding-top: 2em;
+}
+
+.hours {
+  padding-top: .25em;
+  font-size: .75em;
+  font-weight: 100;
+}
+
+.instructions{
+  padding-top: 1em;
+  color: $rosybrown;
+  font-size: .75em;
+  font-weight: 300;
+}
+
+.choiceInstructions {
+  padding: 1em 0 1em 0;
+  font-size: .75em;
+  font-weight: 100;
+}
+
+.addButton {
+  padding: 1em 2em 1em 2em;
+  // font-size:
+  background-color: $red;
+  color: $white;
+  border: none;
+}
+
+h2 {
+
+}
+
+p {
+
+}
+
+hr {
+  width: 80%;
+  // color: $red;
+}
+
 
 
 //Page four
