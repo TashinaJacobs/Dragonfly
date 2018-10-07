@@ -139,13 +139,29 @@ body, html {
     body, html {
       font-size: 150%; } }
 
+h1 {
+  padding-top: 2em; }
+
+h2 {
+  padding-bottom: .4em;
+  font-size: .85em;
+  font-weight: 500; }
+
+p {
+  font-size: .65em;
+  font-weight: 100;
+  line-height: 1.6em; }
+
+hr {
+  width: 80%; }
+
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 12%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  margin: 0 auto; }
   .header .logo {
     margin: 0 auto;
     padding: 0;
@@ -191,7 +207,7 @@ body, html {
   padding: .25em;
   font-size: .75em;
   font-weight: 600;
-  color: #666666; }
+  color: #ded5d5; }
 
 .inputName {
   width: 100%;
@@ -209,14 +225,16 @@ body, html {
       margin-top: 15%; } }
 
 .containerTwo {
-  flex-direction: column;
-  align-items: center; }
-
-.box {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; }
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   width: 100%;
   height: 25%;
   background-size: 100% 100%;
@@ -248,16 +266,16 @@ body, html {
     .title {
       line-height: 2em; } }
 
-.containerThree {
+.containerThree, .containerFour {
   background-color: #363535;
   overflow: scroll; }
+
+.containerTwo, .containerThree, .containerFour, .containerFive {
+  display: none; }
 
 .description {
   text-align: center;
   padding: 0 2em 0 2em; }
-
-h1 {
-  padding-top: 2em; }
 
 .hours {
   padding-top: .25em;
@@ -275,7 +293,25 @@ h1 {
   font-size: .75em;
   font-weight: 100; }
 
+.menuItem {
+  margin: 2%;
+  display: inline-flex;
+  padding: 10%; }
+
+.itemText {
+  width: 80%;
+  margin: 2%; }
+
+.itemInputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2%; }
+
 .addButton {
+  margin: 2%;
+  width: 80%;
   padding: .5em 1.25em .5em 1.25em;
   font-size: .9em;
   background-color: #aa0b0f;
@@ -283,34 +319,71 @@ h1 {
   border: none; }
 
 .itemNumber {
+  margin-bottom: 10%;
   padding: .5em 0 .5em 0;
   font-size: .75em;
-  color: #666666;
-  width: 10%;
+  color: #ded5d5;
+  width: 40%;
   text-align: center; }
-
-h2 {
-  padding-bottom: .4em;
-  font-size: .85em;
-  font-weight: 500; }
-
-p {
-  font-size: .65em;
-  font-weight: 100;
-  line-height: 1.6em; }
-
-hr {
-  width: 80%; }
-
-.menuItem {
-  padding: 10%; }
 
 .continueButton {
   margin: 15% 35% 15% 35%;
   padding: .5em 1.25em .5em 1.25em;
   font-size: .9em;
-  background-color: #666666;
+  background-color: #ded5d5;
   color: #ffffff;
   border: none; }
+
+.itemsInCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em; }
+
+.changeButton {
+  margin: 2%;
+  padding: .5em 2em .5em 2em;
+  font-size: .9em;
+  background-color: #aa0b0f;
+  color: #ffffff;
+  border: none; }
+
+.orderButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15% 0 15% 0; }
+
+.continueButtonTwo {
+  margin: 2%;
+  padding: .5em 1.25em .5em 1.25em;
+  font-size: .9em;
+  background-color: #ded5d5;
+  color: #000000;
+  border: none; }
+
+.containerFive {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.popOver {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 60%;
+  background-color: #333333;
+  background-image: url("../img/fan.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  text-align: center; }
+
+.thankyou {
+  margin-top: 10em; }
+
+.recieved {
+  margin-bottom: 3em;
+  font-weight: 500; }
 
 /*# sourceMappingURL=styles.css.map */

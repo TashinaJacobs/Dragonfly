@@ -90,7 +90,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  // overflow: hidden;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -136,17 +135,21 @@ $black: #000000;
 $grey: #333333;
 $red: #aa0b0f;
 $white: #ffffff;
-$light-grey: #666666;
+$light-grey: #ded5d5;
 $darkslategrey: #363535;
 $rosybrown: #c98d8e;
 
 $tablet: 600px;
 
 //Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
-
-//
+//Body styles
 body, html {
   margin: 0 auto;
   width: 100%;
@@ -161,17 +164,36 @@ body, html {
   }
 }
 
+h1 {
+    padding-top: 2em;
+}
+
+h2 {
+  padding-bottom: .4em;
+  font-size: .85em;
+  font-weight: 500;
+}
+
+p {
+  font-size: .65em;
+  font-weight: 100;
+  line-height: 1.6em;
+}
+
+hr {
+  width: 80%;
+  // .yourOrderHr {
+  //   margin-bottom: 10%;
+  // }
+}
+
 // Page structure
 
 .header {
+  @include flex-center;
   width: 100%;
   height: 12%;
   margin: 0 auto;
-  // padding-top: 3%;
-  // padding-bottom: 3%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   .logo {
     margin: 0 auto;
     padding: 0;
@@ -181,7 +203,6 @@ body, html {
     margin: 0 auto;
     font-size: 2em;
     color: $red;
-    // padding-left: 5%;
   }
 }
 
@@ -251,16 +272,13 @@ body, html {
 //Page two
 
 .containerTwo {
+  @include flex-center;
   flex-direction: column;
-  align-items: center;
-
 }
 
 .box {
+  @include flex-center;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 25%;
   background-size: 100% 100%;
@@ -300,29 +318,20 @@ body, html {
 
 
 
-// .containerTwo {
-//   margin: 0 auto;
-//   width: 100%;
-//   height: 88%;
-//   display: flex;
-// }
-
-
 //Page three
 
-.containerThree {
+.containerThree, .containerFour {
   background-color: $darkslategrey;
   overflow: scroll;
+}
+
+.containerTwo, .containerThree, .containerFour, .containerFive {
+  display: none;
 }
 
 .description {
   text-align: center;
   padding: 0 2em 0 2em;
-
-}
-
-h1 {
-    padding-top: 2em;
 }
 
 .hours {
@@ -344,7 +353,26 @@ h1 {
   font-weight: 100;
 }
 
+.menuItem {
+  margin: 2%;
+  display: inline-flex;
+  padding: 10%;
+}
+
+.itemText {
+  width: 80%;
+  margin: 2%;
+}
+
+.itemInputs {
+  @include flex-center;
+  flex-direction: column;
+  margin: 2%;
+}
+
 .addButton {
+  margin: 2%;
+  width: 80%;
   padding: .5em 1.25em .5em 1.25em;
   font-size: .9em;
   background-color: $red;
@@ -353,35 +381,14 @@ h1 {
 }
 
 .itemNumber {
+  margin-bottom: 10%;
   padding: .5em 0 .5em 0;
   font-size: .75em;
   color: $light-grey;
-  width: 10%;
+  width: 40%;
   text-align: center;
 }
 
-h2 {
-  padding-bottom: .4em;
-  font-size: .85em;
-  font-weight: 500;
-}
-
-p {
-  font-size: .65em;
-  font-weight: 100;
-  line-height: 1.6em;
-}
-
-hr {
-  width: 80%;
-  // color: $red;
-}
-
-.menuItem {
-  padding: 10%;
-}
-
-//Page four
 .continueButton {
   margin: 15% 35% 15% 35%;
   padding: .5em 1.25em .5em 1.25em;
@@ -389,6 +396,68 @@ hr {
   background-color: $light-grey;
   color: $white;
   border: none;
+}
+
+//Page four
+
+
+
+.itemsInCart {
+  @include flex-center;
+  font-size: 2em;
+}
+
+
+
+.changeButton {
+  margin: 2%;
+  padding: .5em 2em .5em 2em;
+  font-size: .9em;
+  background-color: $red;
+  color: $white;
+  border: none;
+}
+
+.orderButtons {
+  @include flex-center;
+  margin: 15% 0 15% 0;
+}
+
+.continueButtonTwo {
+  margin: 2%;
+  padding: .5em 1.25em .5em 1.25em;
+  font-size: .9em;
+  background-color: $light-grey;
+  color: $black;
+  border: none;
+}
+
+// Page five
+
+.containerFive {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popOver {
+  margin: auto;
+  @include flex-center;
+  width: 80%;
+  height: 60%;
+  background-color: $grey;
+  background-image: url("../img/fan.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  text-align: center;
+}
+
+.thankyou {
+  margin-top: 10em;
+}
+
+.recieved {
+  margin-bottom: 3em;
+  font-weight: 500;
 }
 
 
