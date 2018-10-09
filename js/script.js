@@ -37,6 +37,8 @@ $('#logo').click(function(){
   }
 });
 
+//click events working (troublshooted below - problem is with targeting the font awesome icons)
+
 // $(contFive).click(function(){
 //   console.log('click');
 // })
