@@ -164,23 +164,23 @@ body, html {
   }
 }
 
-h1 {
-    padding-top: 2em;
+.headingOne {
+  padding-top: 2em;
 }
 
-h2 {
+.headingTwo {
   padding-bottom: .4em;
-  font-size: .85em;
+  // font-size: .85em;
   font-weight: 500;
 }
 
-p {
+.paragraph {
   font-size: .65em;
   font-weight: 100;
   line-height: 1.6em;
 }
 
-hr {
+.yourOrderHr {
   width: 80%;
   // .yourOrderHr {
   //   margin-bottom: 10%;
@@ -215,6 +215,7 @@ hr {
 
 //Page one
 .containerOne {
+  display: none;
   background-image: url("../img/fan.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -249,7 +250,7 @@ hr {
   padding: .25em;
   font-size: .75em;
   font-weight: 600;
-  color: $light-grey;
+  color: $darkslategrey;
 }
 
 .inputName {
@@ -274,6 +275,7 @@ hr {
 .containerTwo {
   @include flex-center;
   flex-direction: column;
+  display: none;
 }
 
 .box {
@@ -321,12 +323,9 @@ hr {
 //Page three
 
 .containerThree, .containerFour {
+  display: none;
   background-color: $darkslategrey;
   overflow: scroll;
-}
-
-.containerTwo, .containerThree, .containerFour, .containerFive {
-  display: none;
 }
 
 .description {
@@ -407,8 +406,6 @@ hr {
   font-size: 2em;
 }
 
-
-
 .changeButton {
   margin: 2%;
   padding: .5em 2em .5em 2em;
@@ -435,30 +432,42 @@ hr {
 // Page five
 
 .containerFive {
-  background-color: rgba(0, 0, 0, 0.5);
+  // display: none;
+  // background-color: rgba(0, 0, 0, 0.5);
+  background-color: $darkslategrey;
+
 }
 
 .popOver {
-  margin: auto;
   @include flex-center;
-  width: 80%;
+  margin: 0 auto;
+  margin-top: 30%;
+  width: 85%;
   height: 60%;
-  background-color: $grey;
-  background-image: url("../img/fan.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+  background-color: $black;
   text-align: center;
+  .popOverImage {
+    width: 100%;
+    background-image: url("../img/fan.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+  .thankyou {
+    margin-top: 10em;
+    .received {
+      margin-top: 2em;
+      margin-bottom: 3em;
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 15%;
+    height: 80%;
+  }
 }
 
-.thankyou {
-  margin-top: 10em;
-}
-
-.recieved {
-  margin-bottom: 3em;
-  font-weight: 500;
-}
 
 
 // Images - use as background in CSS instead of <img> where possible

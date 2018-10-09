@@ -139,20 +139,19 @@ body, html {
     body, html {
       font-size: 150%; } }
 
-h1 {
+.headingOne {
   padding-top: 2em; }
 
-h2 {
+.headingTwo {
   padding-bottom: .4em;
-  font-size: .85em;
   font-weight: 500; }
 
-p {
+.paragraph {
   font-size: .65em;
   font-weight: 100;
   line-height: 1.6em; }
 
-hr {
+.yourOrderHr {
   width: 80%; }
 
 .header {
@@ -178,6 +177,7 @@ hr {
   display: flex; }
 
 .containerOne {
+  display: none;
   background-image: url("../img/fan.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -207,7 +207,7 @@ hr {
   padding: .25em;
   font-size: .75em;
   font-weight: 600;
-  color: #ded5d5; }
+  color: #363535; }
 
 .inputName {
   width: 100%;
@@ -228,7 +228,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  display: none; }
 
 .box {
   display: flex;
@@ -267,11 +268,9 @@ hr {
       line-height: 2em; } }
 
 .containerThree, .containerFour {
+  display: none;
   background-color: #363535;
   overflow: scroll; }
-
-.containerTwo, .containerThree, .containerFour, .containerFive {
-  display: none; }
 
 .description {
   text-align: center;
@@ -363,27 +362,33 @@ hr {
   border: none; }
 
 .containerFive {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: #363535; }
 
 .popOver {
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  margin: 0 auto;
+  margin-top: 30%;
+  width: 85%;
   height: 60%;
-  background-color: #333333;
-  background-image: url("../img/fan.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+  background-color: #000000;
   text-align: center; }
-
-.thankyou {
-  margin-top: 10em; }
-
-.recieved {
-  margin-bottom: 3em;
-  font-weight: 500; }
+  .popOver .popOverImage {
+    width: 100%;
+    background-image: url("../img/fan.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain; }
+  .popOver .thankyou {
+    margin-top: 10em; }
+    .popOver .thankyou .received {
+      margin-top: 2em;
+      margin-bottom: 3em;
+      font-weight: 500; }
+  @media screen and (min-width: 600px) {
+    .popOver {
+      margin-top: 15%;
+      height: 80%; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,8 +12,8 @@
   <body>
 
   <header class="header">
-     <i class="fas fa-angle-left icon"></i>
-     <img class="logo" src="img/dragonfly.png" alt="logo">
+     <i class="fas fa-angle-left icon" id="backBtn"></i>
+     <img class="logo" src="img/dragonfly.png" alt="logo" id="logo">
      <i class="fas fa-bell icon"></i>
   </header>
   <div class="container containerOne">
@@ -24,7 +24,7 @@
         <label class="inputTitle inputTitleTwo" for="">PHONE NUMBER</label>
         <input class="inputField inputNumber"type="text" name="" value="">
       </div>
-      <h2 class="enter" type="button" name="button">ENTER</h2>
+      <h2 class="enter" id="enterBtn" type="button" name="button">ENTER</h2>
     </div>
   </div>
 
@@ -46,20 +46,20 @@
   <div class="container containerThree">
     <div class="wrapper">
       <div class="description">
-        <h1>PRE-THEATRE DINNER MENU</h1>
+        <h1 class="headingOne">PRE-THEATRE DINNER MENU</h1>
 
-        <p class="hours">Monday to Saturday from 4:30pm - 6:30pm</p>
+        <p class="paragraph hours">Monday to Saturday from 4:30pm - 6:30pm</p>
 
-        <p class="instructions">tables need to be vacated by 7:30pm last orders are <br>taken at 6:30pm</p>
+        <p class="paragraph instructions">tables need to be vacated by 7:30pm last orders are <br>taken at 6:30pm</p>
 
-        <p class="choiceInstructions">choose any four dishes for $50 <br> perfect for a light meal for 2 to share</p>
+        <p class="paragraph choiceInstructions">choose any four dishes for $50 <br> perfect for a light meal for 2 to share</p>
       </div>
       <hr>
       <div class="menu">
         <div class="menuItem">
           <div class="itemText">
-            <h2>DUCK AND SHIITAKE SPRING ROLLS</h2>
-            <p>w - vermicelli, hoisin, wood ear mushrooms and cucumber nuoc cham</p>
+            <h2 class="headingTwo">DUCK AND SHIITAKE SPRING ROLLS</h2>
+            <p class="paragraph"> w - vermicelli, hoisin, wood ear mushrooms and cucumber nuoc cham</p>
           </div>
           <div class="itemInputs">
             <input class="itemNumber" type="number" name="duck" value="">
@@ -68,8 +68,8 @@
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2> SALT AND PEPPER SQUID LEGS</h2>
-            <p>w – spiced nori salt and house made roasted sesame mayo</p>
+            <h2 class="headingTwo"> SALT AND PEPPER SQUID LEGS</h2>
+            <p class="paragraph"> w – spiced nori salt and house made roasted sesame mayo</p>
           </div>
           <div class="itemInputs">
             <input class="itemNumber" type="number" name="squid" value="">
@@ -78,8 +78,8 @@
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2>GINGER CHICKEN DUMPLINGS</h2>
-            <p>free range chicken w– fresh ginger and coriander, served in fragrant chilli oil, cassia black vinegar dressing</p>
+            <h2 class="headingTwo">GINGER CHICKEN DUMPLINGS</h2>
+            <p class="paragraph"> free range chicken w– fresh ginger and coriander, served in fragrant chilli oil, cassia black vinegar dressing</p>
           </div>
           <div class="itemInputs">
             <input class="itemNumber" type="number" name="chicken dumpling" value="">
@@ -88,8 +88,8 @@
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2>KOREAN STYLE FRIED CHICKEN</h2>
-            <p>w – sweet roasted chilli, spring onion and sesame glaze</p>
+            <h2 class="headingTwo">KOREAN STYLE FRIED CHICKEN</h2>
+            <p class="paragraph"> w – sweet roasted chilli, spring onion and sesame glaze</p>
           </div>
           <div class="itemInputs">
             <input class="itemNumber" type="number" name="fried chicken" value="">
@@ -98,8 +98,8 @@
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2>SAN CHOI BAO</h2>
-            <p>shiitake mushroom, fresh lime, organic tofu, spring onion, peanut and ginger w – baby cos leaves</p>
+            <h2 class="headingTwo">SAN CHOI BAO</h2>
+            <p class="paragraph"> shiitake mushroom, fresh lime, organic tofu, spring onion, peanut and ginger w – baby cos leaves</p>
           </div>
           <div class="itemInputs">
             <input class="itemNumber" type="number" name="san choi bao" value="">
@@ -108,8 +108,8 @@
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2>PORK AND CHIVE DUMPLINGS</h2>
-            <p>w – ginger infused rice vinegar and soy sauce</p>
+            <h2 class="headingTwo">PORK AND CHIVE DUMPLINGS</h2>
+            <p class="paragraph"> w – ginger infused rice vinegar and soy sauce</p>
           </div>
           <div class="itemInputs">
             <input class="itemNumber" type="number" name="pork dumpling" value="">
@@ -118,8 +118,8 @@
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2>STEAMED PRAWN SHUMAI</h2>
-            <p>w – water chestnuts, garlic chives, pickled green peppercorn, wild Thai ginger, chilli and soy dipping sauce</p>
+            <h2 class="headingTwo">STEAMED PRAWN SHUMAI</h2>
+            <p class="paragraph"> w – water chestnuts, garlic chives, pickled green peppercorn, wild Thai ginger, chilli and soy dipping sauce</p>
           </div>
           <div class="itemInputs">
             <input class="itemNumber" type="number" name="prawn" value="">
@@ -130,7 +130,7 @@
       <hr>
 
       <div>
-        <button class="continueButton" type="button">CONTINUE</button>
+        <button class="continueButton" id="continueBtn" type="button">CONTINUE</button>
       </div>
     </div>
   </div>
@@ -138,61 +138,58 @@
   <div class="container containerFour">
     <div class="wrapper">
       <div class="description">
-        <h1>YOUR ORDER</h1>
+        <h1 class="headingOne">YOUR ORDER</h1>
       </div>
       <hr>
       <ul>
         <div class="menuItem">
           <div class="itemText">
-            <h2>DUCK AND SHIITAKE SPRING ROLLS</h2>
-            <p>w - vermicelli, hoisin, wood ear mushrooms and cucumber nuoc cham</p>
+            <h2 class="headingTwo">DUCK AND SHIITAKE SPRING ROLLS</h2>
+            <p class="paragraph"> w - vermicelli, hoisin, wood ear mushrooms and cucumber nuoc cham</p>
           </div>
           <div class="itemsInCart">
-            <p>X 1</p>
+            <p class="paragraph"> X 1</p>
           </div>
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2> SALT AND PEPPER SQUID LEGS</h2>
-            <p>w – spiced nori salt and house made roasted sesame mayo</p>
+            <h2 class="headingTwo"> SALT AND PEPPER SQUID LEGS</h2>
+            <p class="paragraph"> w – spiced nori salt and house made roasted sesame mayo</p>
           </div>
           <div class="itemsInCart">
-            <p>X 1</p>
+            <p class="paragraph"> X 1</p>
           </div>
         </div>
         <div class="menuItem">
           <div class="itemText">
-            <h2>GINGER CHICKEN DUMPLINGS</h2>
-            <p>free range chicken w– fresh ginger and coriander, served in fragrant chilli oil, cassia black vinegar dressing</p>
+            <h2 class="headingTwo">GINGER CHICKEN DUMPLINGS</h2>
+            <p class="paragraph"> free range chicken w– fresh ginger and coriander, served in fragrant chilli oil, cassia black vinegar dressing</p>
           </div>
           <div class="itemsInCart">
-            <p>X 2</p>
+            <p class="paragraph"> X 2</p>
           </div>
         </div>
       </ul>
 
       <div class="orderButtons">
         <button class="changeButton" type="button">CHANGE</button>
-        <button class="continueButtonTwo" type="button">PLACE ORDER</button>
+        <button class="continueButtonTwo" id="placeOrderBtn" type="button">PLACE ORDER</button>
       </div>
         <hr class="yourOrderHr"></hr>
     </div>
   </div>
 
   <div class="container containerFive">
-    <div class="popOver">
-      <div class="thankyou">
-        <h2>THANK YOU</h2>
-        <p class="recieved">YOUR ORDER HAS BEEN RECIEVED</p>
-        <button class="changeButton" type="button">BACK TO HOME</button>
+      <div class="popOver">
+          <div class="popOverImage">
+            <div class="thankyou">
+              <h2 class="headingTwo">THANK YOU</h2>
+              <p class="received">YOUR ORDER HAS BEEN RECEIVED</p>
+              <button class="changeButton" id="orderCompleteBtn" type="button">BACK TO HOME</button>
+            </div>
+        </div>
       </div>
-    </div>
   </div>
-
-
-
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/script.js" type="text/javascript"></script>
